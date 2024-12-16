@@ -1,0 +1,462 @@
+/*Estilização de todas as páginas*/
+body{
+  margin: auto;
+  position:100%;
+  background-image: linear-gradient(#FFFFFF,#595959, #020505);
+  
+}
+
+/*Menu*/
+.menu{
+  margin-top: -3%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  float: right;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  position: relative;
+  
+}
+nav a:hover {
+  background-color: black;
+  color: aliceblue;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 5px;
+}
+a{
+  text-align: left;
+  text-decoration: none;
+  color:gray;
+  margin: 10px;
+
+}
+.menu-toggle{
+  display: none;
+  font-size: 24px;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+/*Página Inicial*/
+.estrela{
+  font-weight: bold;
+  font-size: 35px;
+
+}
+.titulo{
+  
+  color: #333333;
+  text-align: center;
+  font-size: 40px;
+}
+.titulo2{
+  text-align: center;
+  font-size: 40px;
+  color: #C9C9C9;
+}
+
+#p-inicial{
+  display: inline-block;
+  
+  margin-top: -3%;
+  padding: 6%;
+  font-size: 25px;
+
+}
+#p{
+  text-align: justify;
+  color: aliceblue;
+  margin-top: -25%;
+  padding-left: 50%;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+.carrossel {
+position: relative;
+width: 40%;
+overflow: hidden;
+border: 2px solid #ccc;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f4f4f4;
+
+}
+
+.slides {
+display: flex;
+width: 300%;
+height: 100%;
+transition: transform 0.5s ease-in-out;
+animation: moverCarrossel 10s linear infinite;
+}
+
+.carrossel input[type="radio"] {
+display: none;
+}
+
+.slide {
+width: 100%;
+flex-shrink: 0;
+}
+
+.slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* Controles do carrocel*/
+.controls {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 10px;
+}
+
+.controls label {
+display: block;
+width: 15px;
+height: 15px;
+background-color: #cccccc;
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.controls label:hover {
+background-color: #666666;
+}
+
+/* Vincular o estado de :checked com as imagens */
+#slide1:checked ~ .slides {
+transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+transform: translateX(-200%);
+}
+
+/* Indicador ativo */
+#slide1:checked ~ .controls label[for="slide1"],
+#slide2:checked ~ .controls label[for="slide2"],
+#slide3:checked ~ .controls label[for="slide3"] {
+background-color: #333;
+}
+
+/*Video da primeira página*/
+#video{
+  
+  text-align: center;
+  padding: 80px;
+  padding-top: 80px;
+  display: inline-flex;
+}
+
+#linha{
+  display: flex;
+}
+/*Personalização do card*/
+.card {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 15px;
+	width: 25%;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.card h2 {
+  font-family: helvetica;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.card p {
+  font-family: helvetica;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.card img {
+	width: 50%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.card button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #020505;
+    color: #C9C9C9;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#info{
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+ 
+}
+.a{
+  border-radius: 25%;
+}
+#mais{
+  font-weight: bold;
+  color:black;
+  background-color: #d3dbd9;
+  border-radius: 5px;
+  padding: 10px;
+}
+/*Página de Fotos*/
+.fotos{
+  
+  padding: 4%;
+
+}
+.foto{
+  width: 30%;
+  height: 25%;
+	display: inline-flex;
+  flex-flow: column;
+  margin-right: 3%;
+
+}
+.legenda{
+  font-size: 25px;
+  text-align: center;
+  color:#C9C9C9 ;
+  font-weight: bold;
+  padding: 10px;
+}
+/*Imagem da Capa*/
+.luz{
+  width: 100%;
+}
+
+/*Página Local*/
+#local{
+  
+  text-align: center;  
+}
+#end{
+  font-weight: bolder;
+  font-size: 30px;
+  color: #C9C9C9;
+}
+
+#end2{
+  font-size: 25px;
+  color: #d3dbd9;
+}
+
+#end4{
+  color: #fbeedf;
+  
+}
+
+/*Página de Orçamento*/
+#orcamento{
+  
+  text-align: center;
+  margin-top: -25px;
+  padding-top: 10px;
+  width: 100%;
+
+}
+.orcamento2{
+  
+  background-color: aliceblue;
+  height: 120px;
+  width: 45%;
+  border-radius: 15px ;
+  margin: auto;
+  margin-top:0px;
+  font-size: 20px;
+  
+}
+#orc{
+  background-color: aliceblue;
+  height: 180px;
+  width: 45%;
+  border-radius: 15px ;
+  margin: auto;
+  margin-top:0px;
+  font-size: 20px;
+}
+
+#botao{
+  background-color: aliceblue;
+  height: 40px;
+  width: 10%;
+  background-color: darkgray;
+  color: aliceblue;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px ;
+  cursor: pointer;
+
+}
+
+footer{
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  color: antiquewhite;
+  
+}
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .menu{
+  display: none; /*Esconde o menu*/
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+ }
+ .menu.show{
+  display: flex;
+ }
+ .menu-toggle{
+  display: block;
+  
+ }
+ .titulo, .titulo2{
+  font-size: 22px;
+ }
+ #p{
+  font-size: 14px;
+ }
+ .carrossel{
+  width: 40%;
+ }
+ #video{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 100px;
+  display: inline-flex;
+ }
+ .card{
+  width: 50%;
+  margin: 2px;
+ }
+ .card h2{
+  font-size: 20px;
+ }
+ .card p{
+  font-size: 15px;
+ }
+ .card img{
+  width: 80%;
+ }
+ .card button{
+  font-size: 12px;
+ }
+ #info h2{
+  font-size: 18px;
+ }
+ #info .a{
+  width: 10%;
+  height: 10%;
+ }
+ #mais{
+  font-size: 12px;
+ }
+ footer{
+  font-size: 15px;
+ }
+ .fotos{
+  width: 100%;
+  padding: 0;
+  
+ }
+ .foto span{
+  font-size: 15px;
+ 
+ }
+ .foto{
+  width: 29%;
+  height: 25%;
+  margin-right:0;
+  margin-left: 3%;
+ 
+
+ }
+ .foto:hover{
+  width: 80%;
+ }
+ #local img{
+  width: 60%;
+ }
+ #local iframe{
+  width: 80%;
+  height: 50vh !important;
+ }
+ #end{
+  font-size: 18px;
+ }
+ #end2{
+  font-size: 15px;
+ }
+ .orcamento2{
+  width: 80%;
+ }
+ #orc{
+  width: 80%;
+  padding-top: 20px;
+ }
+ .orcamento2{
+  font-size: 14px;
+  padding-top: 20px;
+  
+ }
+ .orcamento2 label, input{
+  font-size: 18px;
+  
+ }
+ .orcamento2 ::placeholder{
+  font-size: 15px;
+  text-align: center;
+ }
+ #orcamento{
+  padding-top: 40px;
+ }
+ 
+#botao{
+  width: 100px;
+}
+}

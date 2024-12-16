@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name = "description" content = "Raio de Luz: O salão perfeito para celebrar momentos especiais
+   com elegância, infraestrutura moderna e serviços personalizados.">
+  <title>Raio de Luz</title> 
+  <link rel="shortcut icon" href="Imagens/raio.ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <div class="estrela">
+      <img src="Imagens/raio.ico" alt="" width="70px" height="60px"> Raio de Luz
+      
+    </div>
+    <!-- Menu da página -->
+    <nav class="menu">
+      
+      <a href="index.html">Página Inicial</a>
+      <a href="fotos.html">Fotos</a>
+      <a href="local.html">Local</a>
+      <a href="orcamento.html">Orçamento</a>
+      
+    </nav>
+     <button class="menu-toggle" aria-label="Abrir Menu">☰</button> <!--Botão para abrir menu quando em tela pequena -->
+  </header>
+  <main>
+    <section>
+      <img src="Imagens/raiodeluz.png " alt="" class="luz" > <!--Imagem da capa-->
+    </section>
+    <section>
+    <h1 class="titulo">Nossa especialidade é fazer seu evento acontecer.</h1> <!--Titulo principal da página-->
+    </section>
+    <section id="p-inicial">
+      <div class="carrossel"> <!--Carrossel de imagens-->
+        <input type="radio" name="caross" id="slide1" checked>
+        <input type="radio" name="caross" id="slide2">
+        <input type="radio" name="caross" id="slide3">
+    
+        <div class="slides">
+          <div class="slide">
+            <img src="Imagens/salao1.jpeg" alt="Imagem 1">
+          </div>
+          <div class="slide">
+            <img src="Imagens/salao2.jpeg" alt="Imagem 2">
+          </div>
+          <div class="slide">
+            <img src="Imagens/salao3.jpeg" alt="Imagem 3">
+          </div>
+        </div>
+    
+        <div class="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+      </div>
+      <!--Texto que fica ao lado do carrossel de imagens-->
+      <p id="p">Com instalações modernas e sofisticadas, o Salão de Eventos Raio de Luz, localizado em Pirapora - Minas Gerais, conta com capacidade para até 500 pessoas. Ideal para pequenas reuniões ou para grandes eventos, nosso salão de eventos transformará seu encontro em uma experiência única. 
+        O espaço amplo e aberto é perfeito para receber seus convidados para festas de aniversário, casamentos, confraternizações de empresas ou de amigos.</p>
+      
+    </section>
+    <section id="linha">
+    <div id="video"> <!--Vídeo informativo-->
+      <video width="100%" height="auto" controls="controls">
+        <source src="Vídeos/organizar.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="card"> <!--Card informativo -->
+      <h2>Organizar uma festa???</h2>
+      <p>15 Ideias essenciais para organizar a festa perfeita</p>
+      <img src="Imagens/Dicas.gif" alt="">
+      <a href="https://kitfestabh.com.br/blog-como-organizar-uma-festa/" target="_blank"><button>Veja</button></a>
+    </div>
+  </section>
+    <section id="info">
+      <h2>Aguardamos seu contato!</h2> <!--Link para redes sociais-->
+      <a href="https://www.instagram.com/salaodeeventos_raiodeluz/" target="_blank"><img class="a" src="Imagens/insta.png" width="50px" height="50px" alt=""></a>
+      <a href="https://wa.me/5538999219263"><img class="a" src="Imagens/whats.jpeg" height="50px" width="50px" alt=""></a>
+      <a href="https://wa.me/5538991094881"><img class="a" src="Imagens/whats.jpeg" height="50px" width="50px" alt=""></a>
+      <br><br>
+      <a href="orcamento.html" id="mais">Mais Informações</a>
+    </section>
+    
+  </main>
+
+  <footer>Criado por Núbia da Fonseca</footer>
+  <script src="script.js"></script>
+</body>
+</html>

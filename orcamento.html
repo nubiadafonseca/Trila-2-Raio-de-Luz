@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raio de Luz: O salão perfeito para celebrar momentos especiais com elegância, infraestrutura moderna e serviços personalizados.">
+  <title>Orçamento</title>
+  <link rel="shortcut icon" href="Imagens/raio.ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <div class="estrela">
+      <img src="Imagens/raio.ico" alt="" width="70px" height="60px"> Raio de Luz
+      
+    </div>
+    <nav class="menu"> <!-- Menu da página -->
+      
+      <a href="index.html">Página Inicial</a>
+      <a href="fotos.html">Fotos</a>
+      <a href="local.html">Local</a>
+      <a href="orcamento.html">Orçamento</a>
+      
+    </nav>
+    <button class="menu-toggle" aria-label="Abrir Menu">☰</button><!--Botão para abrir menu quando em tela pequena -->
+  </header>
+  <main>
+    <section>
+      <img src="Imagens/Raiodeluz.png" alt="Logo Raio de Luz" class="luz"><!--Imagem da capa-->
+    </section>
+    <section id="orcamento">
+      <div class="orcamento2">
+        <h1>Solicitar Orçamento</h1><!--Titulo principal da página-->
+        <p>Informe abaixo todos os dados solicitados e entraremos em contato para informar o orçamento.</p>
+      </div>
+      <br>
+      <form id="formulario"> <!--Formulário de contato-->
+        <div class="orcamento2">
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="endereco">Endereço:</label><br>
+          <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="telefone">Número de Telefone:</label><br>
+          <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        </div>
+        <br>
+        <div id="orc">
+          <p>Qual tipo de festa?</p>
+          <input type="radio" id="aniversario" name="festa" value="aniversario" required>
+          <label for="aniversario">Aniversário</label><br>
+          <input type="radio" id="casamento" name="festa" value="casamento">
+          <label for="casamento">Casamento</label><br>
+          <input type="radio" id="confraternizacao" name="festa" value="confraternizacao">
+          <label for="confraternizacao">Confraternização</label><br>
+          <input type="radio" id="outros" name="festa" value="outros">
+          <label for="outros">Outros</label><br>
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="tipo">Se escolheu outros, informe qual tipo de festa:</label><br>
+          <input type="text" id="tipo" name="outros" placeholder="Qual tipo">
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="hora-inicio">Informe o horário previsto para início:</label><br>
+          <input type="time" id="hora-inicio" name="hora" required>
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="hora-termino">Informe o horário previsto para término:</label><br>
+          <input type="time" id="hora-termino" name="hora" required>
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="quantidade">Informe a quantidade de convidados:</label><br>
+          <input type="number" id="quantidade" name="quantidade" placeholder="Quantidade" required>
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="data">Selecione a data que deseja realizar o evento:</label><br>
+          <input type="date" id="data" name="data" required>
+        </div>
+        <br>
+        <div class="orcamento2">
+          <label for="comentario">Comentários:</label><br>
+          <textarea id="comentario" name="comentario" placeholder="Digite seu comentário" minlength="50" maxlength="500" rows="4" cols="35"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Enviar" id="botao" >
+      </form>
+    </section>
+  </main>
+  <footer>Criado por Núbia da Fonseca</footer>
+  <script src="script.js"></script>
+</body>
+</html>
